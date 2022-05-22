@@ -11,6 +11,14 @@ Kotlin
 
 Firebase Firestore
 
+# Running the source code
+
+1. Clone the repo using ``` git clone https://github.com/sri-experiments/thewall_android.git ```
+2. Create a new Firebase Project
+3. Download the Google-services.json file and place is inside the app directory
+
+NOTE: Without the google-services.json file the project won't run
+
 # Running the app
 
 Simply download the apk file attached to this repository on your mobile to try out the application
