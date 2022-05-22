@@ -8,6 +8,7 @@ package com.srivats.wall
 import android.app.WallpaperManager
 import android.graphics.Bitmap
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -15,7 +16,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.graphics.drawable.toBitmap
 import com.bumptech.glide.Glide
+import com.google.firebase.firestore.DocumentReference
+import com.google.firebase.firestore.FieldValue
+import com.google.firebase.firestore.FirebaseFirestore
 import com.srivats.wall.databinding.FragmentSecondBinding
+import org.w3c.dom.Document
 
 class DetailFragment : Fragment(), View.OnClickListener {
 
@@ -26,6 +31,7 @@ class DetailFragment : Fragment(), View.OnClickListener {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,6 +45,8 @@ class DetailFragment : Fragment(), View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        Log.d("ID", DetailFragmentArgs.fromBundle(requireArguments()).id)
 
         imgUrl = DetailFragmentArgs.fromBundle(requireArguments()).imgUrl
 
@@ -68,6 +76,11 @@ class DetailFragment : Fragment(), View.OnClickListener {
 
         val wallpaperMgr: WallpaperManager = WallpaperManager.getInstance(context)
         wallpaperMgr.setBitmap(bitmap)
+
+        var wallpaperRef: DocumentReference = FirebaseFirestore.getInstance().collection("wall")
+            .document(DetailFragmentArgs.fromBundle(requireArguments()).id)
+
+        wallpaperRef.update("downloadCounter", FieldValue.increment(1))
 
         val successToast: Toast = Toast.makeText(context, "Wallpaper Set", Toast.LENGTH_SHORT)
         successToast.show()
