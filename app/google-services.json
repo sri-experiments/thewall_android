@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "41447095843",
+    "firebase_url": "https://srivats-22.firebaseio.com",
+    "project_id": "srivats-22",
+    "storage_bucket": "srivats-22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41447095843:android:94b0bd6c20cdd24d5d7b96",
+        "android_client_info": {
+          "package_name": "com.srivats.wall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41447095843-qn30m2hug9ca1bsqt0t9fqfvtrs0d9fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1UmGAvvfRNYga_nv-mQEHrN4Idr-jH3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41447095843-qn30m2hug9ca1bsqt0t9fqfvtrs0d9fm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "41447095843-36plhdpaqc3gsd5hf4027ab8m0m5j8ch.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

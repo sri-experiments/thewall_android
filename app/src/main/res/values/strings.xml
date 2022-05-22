@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">The Wall</string>
+    <string name="action_info">Info</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Home Fragment</string>
+    <string name="detail_fragment_label">Detail Fragment</string>
+    <string name="set_wallpaper">Set Wallpaper</string>
+    <string name="wallpaper_display">Wallpaper display</string>
+    <string name="captured_by">Captured By</string>
+    <string name="description">Description</string>
+    <string name="collection">Collection</string>
+    <string name="image_place_holder">Image place holder</string>
+    <string name="info_text">The wall is a wallpaper website created by two close friends who are passionate about photography. These are some of their favourite captures which they wish to share with the world. Enjoy!</string>
+    <string name="the_creators">The Creators</string>
+</resources>
