@@ -21,5 +21,5 @@ NOTE: Without the google-services.json file the project won't run
 
 # Running the app
 
-Simply download the apk file attached to this repository on your mobile to try out the application
+Click this link to download the Application: https://bit.ly/wall-mob
 
